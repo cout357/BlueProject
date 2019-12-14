@@ -79,6 +79,12 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
         </td>
       </tr>
       <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="right" valign="middle" class="borderright borderbottom bggray">文章头图地址：</td>
+        <td align="left" valign="middle" class="borderright borderbottom main-for">
+        <input type="text" name="arimage"  class="text-word">
+        </td>
+      </tr>
+      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
         <td align="right" valign="middle" class="borderright borderbottom bggray">文章内容：</td>
         <td align="left" valign="middle" class="borderright borderbottom main-for">
         <textarea rows="15" cols="50" name="arcontent"></textarea>

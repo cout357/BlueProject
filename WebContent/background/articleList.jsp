@@ -141,14 +141,14 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
   <tr>
   	
     <td align="left" valign="top" class="fenye"><%= catalogCount%>条数据&nbsp;<%=pageIdx %>/<%=pageCount %> 页&nbsp;&nbsp;
-    <a href="CatalogServlet?type=findAll" target="mainFrame" onFocus="this.blur()">首页</a>&nbsp;&nbsp;
+    <a href="ArticleServlet?type=findAll" target="mainFrame" onFocus="this.blur()">首页</a>&nbsp;&nbsp;
     <%if(pageIdx>1){%>
-    	<a href='CatalogServlet?type=findAll&pageIdx=<%=pageIdx-1 %>' target='mainFrame' onFocus='this.blur()''>上一页</a>&nbsp;&nbsp;
+    	<a href='ArticleServlet?type=findAll&pageIdx=<%=pageIdx-1 %>' target='mainFrame' onFocus='this.blur()''>上一页</a>&nbsp;&nbsp;
     <%} %>
     <%if(pageIdx<pageCount){%>
-    	<a href='CatalogServlet?type=findAll&pageIdx=<%=pageIdx+1 %>' target='mainFrame' onFocus='this.blur()''>下一页</a>&nbsp;&nbsp;
+    	<a href='ArticleServlet?type=findAll&pageIdx=<%=pageIdx+1 %>' target='mainFrame' onFocus='this.blur()''>下一页</a>&nbsp;&nbsp;
     <%} %>
-    <a href='CatalogServlet?type=findAll&pageIdx=<%=pageCount %>' target="mainFrame" onFocus="this.blur()">尾页</a></td>
+    <a href='ArticleServlet?type=findAll&pageIdx=<%=pageCount %>' target="mainFrame" onFocus="this.blur()">尾页</a></td>
   </tr>
 </table>
   </body>

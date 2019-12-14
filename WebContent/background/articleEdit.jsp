@@ -56,7 +56,6 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="main-tab">
     	<!-- 隐藏属性 -->
     	<input type="hidden" name="arid" value=${article.getArid()}>
-    	<input type="hidden" name="arimage" value=${article.getArimage()}>
     	<input type="hidden" name="clicks" value=${article.getClicks()}>
       <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
         <td align="right" valign="middle" class="borderright borderbottom bggray">文章栏目：</td>
@@ -87,6 +86,12 @@ td.fenye{ padding:10px 0 0 0; text-align:right;}
         <td align="right" valign="middle" class="borderright borderbottom bggray">文章标题：</td>
         <td align="left" valign="middle" class="borderright borderbottom main-for">
         <input type="text" name="artitle"  value=${article.getArtitle()} class="text-word">
+        </td>
+      </tr>
+      <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
+        <td align="right" valign="middle" class="borderright borderbottom bggray">文章头图地址：</td>
+        <td align="left" valign="middle" class="borderright borderbottom main-for">
+        <input type="text" name="arimage" class="text-word" value=${article.getArimage()}>
         </td>
       </tr>
       <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">

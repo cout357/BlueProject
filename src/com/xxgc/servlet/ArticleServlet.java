@@ -115,6 +115,7 @@ public class ArticleServlet extends HttpServlet {
 		art.setArtitle(request.getParameter("artitle"));
 		art.setArcontent(request.getParameter("arcontent"));
 		art.setAruser(request.getParameter("aruser"));
+		art.setArimage(request.getParameter("arimage"));
 		Date date = new Date();
 	    DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");		//刷新修改日期
 	    String artime = simpleDateFormat.format(date);
